@@ -8,8 +8,7 @@ RUN curl -sL https://deb.nodesource.com/setup_5.x | bash - && \
     dpkg -i sbt-0.13.11.deb && \
     wget -nv http://www.scala-lang.org/files/archive/scala-2.11.8.deb && \
     dpkg -i scala-2.11.8.deb && \
-    rm sbt-0.13.11.deb scala-2.11.8.deb && \
-    sbt reload
+    rm sbt-0.13.11.deb scala-2.11.8.deb
 
 VOLUME /root/.ivy2
 VOLUME /project
